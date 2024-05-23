@@ -168,26 +168,63 @@
 //   return `${this.firstName} ${this.lastName}`;
 // };
 
-// Class
-class Person {
-  constructor(firstName, lastName, age, dob) {
-    this.firstName = firstName;
-    this.lastName = lastName;
-    this.age = age;
-    this.dob = new Date(dob);
-  }
+// // Class
+// class Person {
+//   constructor(firstName, lastName, age, dob) {
+//     this.firstName = firstName;
+//     this.lastName = lastName;
+//     this.age = age;
+//     this.dob = new Date(dob);
+//   }
 
-  getBirthYear() {
-    return this.dob.getFullYear();
-  }
+//   getBirthYear() {
+//     return this.dob.getFullYear();
+//   }
 
-  getFullName() {
-    return `${this.firstName} ${this.lastName}`;
-  }
-}
+//   getFullName() {
+//     return `${this.firstName} ${this.lastName}`;
+//   }
+// }
 
-const person1 = new Person('John', 'Doe', 30, '4-2-1980');
-const person2 = new Person('Mary', 'Smith', 22, '2-6-1995');
+// const person1 = new Person('John', 'Doe', 30, '4-2-1980');
+// const person2 = new Person('Mary', 'Smith', 22, '2-6-1995');
 
-console.log(person1);
-console.log(person2.getBirthYear());
+// console.log(person1);
+// console.log(person2.getBirthYear());
+
+// DOM
+
+// Selecting single element
+// console.log(document.getElementById('my-form'));
+// console.log(document.querySelector('h1'));
+
+// Multiple elements
+// console.log(document.querySelectorAll('.item'));
+// console.log(document.getElementsByClassName('item'));
+// console.log(document.getElementsByTagName('li'));
+
+// forEach with querySelector
+// const items = document.querySelectorAll('.item');
+
+// items.forEach((item) => console.log(item));
+
+// const ul = document.querySelector('.items');
+
+// ul.lastElementChild.remove();
+// ul.firstElementChild.textContent = 'Hello';
+// ul.children[1].innerText = 'My';
+// ul.lastElementChild.innerHTML = '<h1>Hello</h1>';
+
+// const btn = document.querySelector('.btn');
+
+// // btn.style.background = 'teal';
+// // btn.style.fontStyle = 'italic';
+// // btn.style.fontSize = '20px';
+
+// btn.addEventListener('click', (e) => {
+//   e.preventDefault();
+//   document.querySelector('#my-form').style.background = '#ccc';
+//   document.querySelector('body').classList.add('bg-dark');
+//   document.querySelector('.items').lastElementChild.innerHTML =
+//     '<h1>Heading 1</h1>';
+// });
